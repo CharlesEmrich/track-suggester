@@ -173,6 +173,7 @@ $(function() {
 
     //If I keep hiding the form, add a button that hides your selection and brings the form back!
     $("#pref-form").addClass("hidden");
+    $("#retake").removeClass("hidden");
     var bestTracks = resolveAnswers();
     for (var i = 0; i < bestTracks.length; i++) {
       $("#" + bestTracks[i] + "-panel").removeClass("hidden");
@@ -185,6 +186,7 @@ $(function() {
     resetPrefs();
     $("#pref-form").removeClass("hidden");
     $("#pref-form").slideDown();
+    $("#retake").addClass("hidden");
     $("div.panel").addClass("hidden");
   })
 

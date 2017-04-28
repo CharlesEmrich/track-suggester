@@ -1,3 +1,12 @@
 .question-div {
   /* Keep form fields from stacking directly atop one another. Margin won't do it.*/
 }
+
+#retake {
+  text-align: center;
+}
+
+.ep-green {
+  background-color: #00B3B4;
+  color: white;
+}
