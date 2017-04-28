@@ -15,3 +15,8 @@
   font-size: 18px;
   font-weight: bolder;
 }
+
+.panel .panel-heading {
+  background-color: #00B3B4;
+  color: white;
+}
