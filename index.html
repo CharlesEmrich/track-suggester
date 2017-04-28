@@ -16,14 +16,14 @@
       </div>
       <div class="row">
         <form id="pref-form">
-          <div class="form-group">
+          <div class="form-group question-div">
             <div class="col-xs-5">
               <label for="question1">Have you learned a language or framework before?</label>
             </div>
             <div class="col-xs-7">
               <select class="form-control custom-select" id="question1">
-              <option value="">Yes</option value="">
-              <option value="">No</option value="">
+              <option value="">Yes</option>
+              <option value="">No</option>
             </select>
             </div>
             <div class="well hidden col-xs-12">
@@ -32,61 +32,71 @@
               </div>
               <div class="col-xs-7">
                 <select class="form-control custom-select" id="sub-question1">
-                  <option value="">Ruby/Rails</option value="">
-                  <option value="">PHP/Drupal</option value="">
-                  <option value="">Java/Android</option value="">
-                  <option value="">CSS</option value="">
-                  <option value="">C#/.NET</option value="">
+                  <option value="">Ruby/Rails</option>
+                  <option value="">PHP/Drupal</option>
+                  <option value="">Java/Android</option>
+                  <option value="">CSS</option>
+                  <option value="">C#/.NET</option>
                 </select>
               </div>
             </div>
+          </div>
+
+          <div class="form-group question-div">
             <div class="col-xs-5">
               <label for="question2">Does designing front-ends or back-ends sound more interesting?</label>
             </div>
             <div class="col-xs-7">
               <select class="form-control custom-select" id="question2">
-                <option value="">Front-Ends</option value="">
-                <option value="">Back-Ends</option value="">
-                <option value="">What are those?</option value="">
+                <option value="">Front-Ends</option>
+                <option value="">Back-Ends</option>
+                <option value="">What are those?</option>
                 <!-- Show explanatory div if third option is selected? -->
               </select>
             </div>
+          </div>
 
+          <div class="form-group question-div">
             <div class="col-xs-5">
               <label for="question3">Would you prefer to work at a smaller company or a bigger one?</label>
             </div>
             <div class="col-xs-7">
               <select class="form-control custom-select" id="question3">
-                <option value="">Smaller</option value="">
-                <option value="">Bigger</option value="">
-                <option value="">Doesn't Matter to Me</option value="">
+                <option value="">Smaller</option>
+                <option value="">Bigger</option>
+                <option value="">Doesn't Matter to Me</option>
               </select>
             </div>
+          </div>
 
+          <div class="form-group question-div">
             <div class="col-xs-5">
               <label for="question4">Do you make art, or want to make art?</label>
             </div>
             <div class="col-xs-7">
               <select class="form-control custom-select" id="question4">
-                <option value="">I do, and I want to continue.</option value="">
-                <option value="">I don't, but I want to start.</option value="">
-                <option value="">I don't, and don't plan to start.</option value="">
+                <option value="">I do, and I want to continue.</option>
+                <option value="">I don't, but I want to start.</option>
+                <option value="">I don't, and don't plan to start.</option>
               </select>
             </div>
+          </div>
 
+          <div class="form-group question-div">
             <div class="col-xs-5">
               <label for="question5">Databases or user interfaces?</label>
             </div>
             <div class="col-xs-7">
               <select class="form-control custom-select" id="question5">
-                <option value="">Databases</option value="">
-                <option value="">User Interfaces</option value="">
-                <option value="">Neither</option value="">
+                <option value="">Databases</option>
+                <option value="">User Interfaces</option>
+                <option value="">Neither</option>
                 <!-- express disbelief, incredulity? -->
-                <option value="">Both</option value="">
+                <option value="">Both</option>
               </select>
             </div>
           </div>
+          <button type="submit" name="submit-button">What should I do?</button>
         </form>
       </div>
       <div id="tracks" class="row hidden">
