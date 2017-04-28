@@ -9,9 +9,12 @@ var RubyRailsPref = 0,
 function processQ1(answer) {
   switch (answer) {
     case 1:
-
+    //Languages that are good choices if user has programmed before:
+      PHPDrupalPref += 1,
+      JavaAndroidPref +=1
       break;
     case 2:
+    //Languages that are good choices if user has not programmed before:
 
       break;
     default:
@@ -129,11 +132,19 @@ $(function() {
     //   $("#question4").val(),
     //   $("#question5").val()
     // ]);
-    processQ1($("#question1").val());
-    processQ2($("#question2").val());
-    processQ3($("#question3").val());
-    processQ4($("#question4").val());
-    processQ5($("#question5").val());
+    processQ1(parseInt($("#question1").val()));
+    processQ2(parseInt($("#question2").val()));
+    processQ3(parseInt($("#question3").val()));
+    processQ4(parseInt($("#question4").val()));
+    processQ5(parseInt($("#question5").val()));
+
+    console.log([
+      RubyRailsPref,
+      PHPDrupalPref,
+      JavaAndroidPref,
+      CSSDesignPref,
+      CdotNetPref
+    ]);
 
     resolveAnswers();
     event.preventDefault();
