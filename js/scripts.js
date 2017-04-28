@@ -109,19 +109,22 @@ function processQ5(answer) {
 function processSubQ1 (answer) {
   switch (answer) {
     case 1:
-
+      RubyRailsPref = 0;
       break;
     case 2:
-
+      PHPDrupalPref = 0;
       break;
     case 3:
-
+      JavaAndroidPref = 0;
       break;
     case 4:
-
+      CSSDesignPref = 0;
+      break;
+    case 4:
+      CdotNetPref = 0;
       break;
     default:
-    console.log("Whoops, processSubQ1 defaulted.");
+    console.log("processSubQ1 defaulted. This is probably not an error.");
 
   }
 }
@@ -162,6 +165,7 @@ $(function() {
     processQ3(parseInt($("#question3").val()));
     processQ4(parseInt($("#question4").val()));
     processQ5(parseInt($("#question5").val()));
+    processSubQ1(parseInt($("#sub-question1").val()))
 
     console.log([
       "RubyRailsPref is " + RubyRailsPref,
@@ -188,12 +192,25 @@ $(function() {
     $("#pref-form").slideDown();
     $("#retake").addClass("hidden");
     $("div.panel").addClass("hidden");
-  })
+    $("#context-q-1").addClass("hidden");
+    $("#disbelief").removeClass("hidden");
+  });
 
   //Handles hiding and showing of subQ1:
   $("#question1").change(function() {
-    if (true) {
-      //Check if they said yes, if so show subQ1
+    if (parseInt($("#question1").val()) === 1) {
+      $("#context-q-1").removeClass("hidden");
     }
-  })
+  });
+
+  $("#question5").change(function() {
+    console.log("ping");
+    if (parseInt($("#question5").val()) === 3) {
+      $("#disbelief").removeClass("hidden");
+      console.log("pong");
+    } else {
+      $("#disbelief").addClass("hidden");
+      console.log("zing");
+    }
+  });
 });
