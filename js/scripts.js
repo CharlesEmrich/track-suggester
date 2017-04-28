@@ -61,16 +61,19 @@ function processQ3(answer) {
 function processQ4(answer) {
   switch (answer) {
     case 1:
-
+      CSSDesignPref   += 3,
+      RubyRailsPref   += 1;
+      JavaAndroidPref += 1;
       break;
     case 2:
-
+      CSSDesignPref += 1,
+      RubyRailsPref += 1;
       break;
     case 3:
-
-      break;
-    case 4:
-
+      JavaAndroidPref += 1,
+      PHPDrupalPref   += 1,
+      CSSDesignPref   -= 1,
+      CdotNetPref     += 1;
       break;
     default:
       console.log("Whoops, processQ4 defaulted.");
