@@ -1,21 +1,23 @@
 //Business at the Top:
 // Variables to hold compatibility levels with given tracks:
-var RubyRailsPref = 0,
-    PHPDrupalPref = 0,
+var RubyRailsPref   = 0,
+    PHPDrupalPref   = 0,
     JavaAndroidPref = 0,
-    CSSDesignPref = 0,
-    CdotNetPref = 0;
+    CSSDesignPref   = 0,
+    CdotNetPref     = 0;
 
 function processQ1(answer) {
   switch (answer) {
     case 1:
     //Languages that are good choices if user has programmed before:
-      PHPDrupalPref += 1,
-      JavaAndroidPref +=1
+      PHPDrupalPref   += 1,
+      JavaAndroidPref += 1;
       break;
     case 2:
     //Languages that are good choices if user has not programmed before:
-
+      RubyRailsPref += 1,
+      CSSDesignPref += 1,
+      CdotNetPref   += 1;
       break;
     default:
     console.log("Whoops, processQ1 defaulted.");
