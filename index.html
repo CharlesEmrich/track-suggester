@@ -17,52 +17,75 @@
       <div class="row">
         <form id="pref-form">
           <div class="form-group">
-            <label for="question1">Have you learned a language or framework before?</label>
-            <select multiple class="form-control" id="question1">
-              <option>Yes</option>
-              <option>No</option>
+            <div class="col-xs-5">
+              <label for="question1">Have you learned a language or framework before?</label>
+            </div>
+            <div class="col-xs-7">
+              <select class="form-control custom-select" id="question1">
+              <option value="">Yes</option value="">
+              <option value="">No</option value="">
             </select>
-            <div class="well hidden">
-              <label for="which-one">Oh, which one?</label>
-              <select multiple class="form-control" id="sub-question1">
-                <option>Ruby/Rails</option>
-                <option>PHP/Drupal</option>
-                <option>Java/Android</option>
-                <option>CSS</option>
-                <option>C#/.NET</option>
+            </div>
+            <div class="well hidden col-xs-12">
+              <div class="col-xs-5">
+                <label for="which-one">Oh, which one?</label>
+              </div>
+              <div class="col-xs-7">
+                <select class="form-control custom-select" id="sub-question1">
+                  <option value="">Ruby/Rails</option value="">
+                  <option value="">PHP/Drupal</option value="">
+                  <option value="">Java/Android</option value="">
+                  <option value="">CSS</option value="">
+                  <option value="">C#/.NET</option value="">
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-5">
+              <label for="question2">Does designing front-ends or back-ends sound more interesting?</label>
+            </div>
+            <div class="col-xs-7">
+              <select class="form-control custom-select" id="question2">
+                <option value="">Front-Ends</option value="">
+                <option value="">Back-Ends</option value="">
+                <option value="">What are those?</option value="">
+                <!-- Show explanatory div if third option is selected? -->
               </select>
             </div>
 
-            <label for="question2">Does designing front-ends or back-ends sound more interesting?</label>
-            <select multiple class="form-control" id="question2">
-              <option>Front-Ends</option>
-              <option>Back-Ends</option>
-              <option>What are those?</option>
-              <!-- Show explanatory div if third option is selected? -->
-            </select>
+            <div class="col-xs-5">
+              <label for="question3">Would you prefer to work at a smaller company or a bigger one?</label>
+            </div>
+            <div class="col-xs-7">
+              <select class="form-control custom-select" id="question3">
+                <option value="">Smaller</option value="">
+                <option value="">Bigger</option value="">
+                <option value="">Doesn't Matter to Me</option value="">
+              </select>
+            </div>
 
-            <label for="question3">Would you prefer to work at a smaller company or a bigger one?</label>
-            <select multiple class="form-control" id="question3">
-              <option>Smaller</option>
-              <option>Bigger</option>
-              <option>Doesn't Matter to Me</option>
-            </select>
+            <div class="col-xs-5">
+              <label for="question4">Do you make art, or want to make art?</label>
+            </div>
+            <div class="col-xs-7">
+              <select class="form-control custom-select" id="question4">
+                <option value="">I do, and I want to continue.</option value="">
+                <option value="">I don't, but I want to start.</option value="">
+                <option value="">I don't, and don't plan to start.</option value="">
+              </select>
+            </div>
 
-            <label for="question4">Do you make art, or want to make art?</label>
-            <select multiple class="form-control" id="question4">
-              <option>I do, and I want to continue.</option>
-              <option>I don't, but I want to start.</option>
-              <option>I don't, and don't plan to start.</option>
-            </select>
-
-            <label for="question5">Databases or user interfaces?</label>
-            <select multiple class="form-control" id="question5">
-              <option>Databases</option>
-              <option>User Interfaces</option>
-              <option>Neither</option>
-              <!-- express disbelief, incredulity? -->
-              <option>Both</option>
-            </select>
+            <div class="col-xs-5">
+              <label for="question5">Databases or user interfaces?</label>
+            </div>
+            <div class="col-xs-7">
+              <select class="form-control custom-select" id="question5">
+                <option value="">Databases</option value="">
+                <option value="">User Interfaces</option value="">
+                <option value="">Neither</option value="">
+                <!-- express disbelief, incredulity? -->
+                <option value="">Both</option value="">
+              </select>
+            </div>
           </div>
         </form>
       </div>
