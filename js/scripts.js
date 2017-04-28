@@ -123,18 +123,34 @@ function processSubQ1 (answer) {
 }
 
 function resolveAnswers () {
+  var maxPreference = [RubyRailsPref, PHPDrupalPref, JavaAndroidPref, CSSDesignPref, CdotNetPref].sort()[4];
+  var result = [];
 
+  if (RubyRailsPref === maxPreference) {
+    result.push("ruby");
+  }
+
+  if (PHPDrupalPref === maxPreference) {
+    result.push("php");
+  }
+
+  if (JavaAndroidPref === maxPreference) {
+    result.push("java");
+  }
+
+  if (CSSDesignPref === maxPreference) {
+    result.push("css");
+  }
+
+  if (CdotNetPref === maxPreference) {
+    result.push("c");
+  }
+
+  return result;
 }
 //Party in the Basement:
 $(function() {
   $("form").submit(function(event) {
-    // console.log([
-    //   $("#question1").val(),
-    //   $("#question2").val(),
-    //   $("#question3").val(),
-    //   $("#question4").val(),
-    //   $("#question5").val()
-    // ]);
     processQ1(parseInt($("#question1").val()));
     processQ2(parseInt($("#question2").val()));
     processQ3(parseInt($("#question3").val()));
@@ -142,11 +158,11 @@ $(function() {
     processQ5(parseInt($("#question5").val()));
 
     console.log([
-      RubyRailsPref,
-      PHPDrupalPref,
-      JavaAndroidPref,
-      CSSDesignPref,
-      CdotNetPref
+      "RubyRailsPref is " + RubyRailsPref,
+      "PHPDrupalPref is " + PHPDrupalPref,
+      "JavaAndroidPref is " + JavaAndroidPref,
+      "CSSDesignPref is " + CSSDesignPref,
+      "CdotNetPref is " + CdotNetPref
     ]);
 
     resolveAnswers();
