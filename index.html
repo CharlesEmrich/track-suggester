@@ -17,45 +17,51 @@
       <div class="row">
         <form id="pref-form">
           <div class="form-group">
-            <label for="question1">First Question</label>
+            <label for="question1">Have you learned a language or framework before?</label>
             <select multiple class="form-control" id="question1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Yes</option>
+              <option>No</option>
             </select>
-            <label for="question2">Second Question</label>
+            <div class="well hidden">
+              <label for="which-one">Oh, which one?</label>
+              <select multiple class="form-control" id="sub-question1">
+                <option>Ruby/Rails</option>
+                <option>PHP/Drupal</option>
+                <option>Java/Android</option>
+                <option>CSS</option>
+                <option>C#/.NET</option>
+              </select>
+            </div>
+
+            <label for="question2">Does designing front-ends or back-ends sound more interesting?</label>
             <select multiple class="form-control" id="question2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Front-Ends</option>
+              <option>Back-Ends</option>
+              <option>What are those?</option>
+              <!-- Show explanatory div if third option is selected? -->
             </select>
-            <label for="question3">Third Question</label>
+
+            <label for="question3">Would you prefer to work at a smaller company or a bigger one?</label>
             <select multiple class="form-control" id="question3">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Smaller</option>
+              <option>Bigger</option>
+              <option>Doesn't Matter to Me</option>
             </select>
-            <label for="question4">Fourth Question</label>
+
+            <label for="question4">Do you make art, or want to make art?</label>
             <select multiple class="form-control" id="question4">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>I do, and I want to continue.</option>
+              <option>I don't, but I want to start.</option>
+              <option>I don't, and don't plan to start.</option>
             </select>
-            <label for="question5">Fifth Question</label>
+
+            <label for="question5">Databases or user interfaces?</label>
             <select multiple class="form-control" id="question5">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Databases</option>
+              <option>User Interfaces</option>
+              <option>Neither</option>
+              <!-- express disbelief, incredulity? -->
+              <option>Both</option>
             </select>
           </div>
         </form>
@@ -105,12 +111,3 @@
     </div>
   </body>
 </html>
-
-<!--
-1. Do you like working on front-end or back-end logic?
-2. Do you want to work at a smaller corporation or a bigger one?
-3. Do you make art, or want to make art?
-4. Databases or User Interfaces?
-5. Do you already know a language?
-  5.1 If so, which one?
- -->
