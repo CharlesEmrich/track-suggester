@@ -28,16 +28,13 @@ function processQ1(answer) {
 function processQ2(answer) {
   switch (answer) {
     case 1:
-
+      RubyRailsPref   += 1,
+      JavaAndroidPref += 1,
+      CSSDesignPref   += 2;
       break;
     case 2:
-
-      break;
-    case 3:
-
-      break;
-    case 4:
-
+      CdotNetPref   += 2,
+      PHPDrupalPref += 2;
       break;
     default:
       console.log("Whoops, processQ2 defaulted.");
