@@ -193,7 +193,7 @@ $(function() {
     $("#retake").addClass("hidden");
     $("div.panel").addClass("hidden");
     $("#context-q-1").addClass("hidden");
-    $("#disbelief").removeClass("hidden");
+    $("#disbelief").addClass("hidden");
   });
 
   //Handles hiding and showing of subQ1:
@@ -204,13 +204,10 @@ $(function() {
   });
 
   $("#question5").change(function() {
-    console.log("ping");
     if (parseInt($("#question5").val()) === 3) {
       $("#disbelief").removeClass("hidden");
-      console.log("pong");
     } else {
       $("#disbelief").addClass("hidden");
-      console.log("zing");
     }
   });
 });

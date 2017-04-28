@@ -10,3 +10,8 @@
   background-color: #00B3B4;
   color: white;
 }
+
+.track-name {
+  font-size: 18px;
+  font-weight: bolder;
+}
