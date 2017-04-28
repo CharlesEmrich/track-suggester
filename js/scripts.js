@@ -1,10 +1,14 @@
 //Business at the Top:
 // Variables to hold compatibility levels with given tracks:
-var RubyRailsPref   = 0,
-    PHPDrupalPref   = 0,
-    JavaAndroidPref = 0,
-    CSSDesignPref   = 0,
-    CdotNetPref     = 0;
+var RubyRailsPref, PHPDrupalPref, JavaAndroidPref, CSSDesignPref, CdotNetPref;
+
+function resetPrefs() {
+  RubyRailsPref   = 0,
+  PHPDrupalPref   = 0,
+  JavaAndroidPref = 0,
+  CSSDesignPref   = 0,
+  CdotNetPref     = 0;
+}
 
 function processQ1(answer) {
   switch (answer) {
@@ -150,6 +154,8 @@ function resolveAnswers () {
 }
 //Party in the Basement:
 $(function() {
+  resetPrefs();
+
   $("form").submit(function(event) {
     processQ1(parseInt($("#question1").val()));
     processQ2(parseInt($("#question2").val()));
@@ -165,9 +171,22 @@ $(function() {
       "CdotNetPref is " + CdotNetPref
     ]);
 
-    resolveAnswers();
+    //If I keep hiding the form, add a button that hides your selection and brings the form back!
+    $("#pref-form").addClass("hidden");
+    var bestTracks = resolveAnswers();
+    for (var i = 0; i < bestTracks.length; i++) {
+      $("#" + bestTracks[i] + "-panel").removeClass("hidden");
+      $("#" + bestTracks[i] + "-panel").slideDown();
+    }
     event.preventDefault();
   });
+
+  $("#retake").click(function() {
+    resetPrefs();
+    $("#pref-form").removeClass("hidden");
+    $("#pref-form").slideDown();
+    $("div.panel").addClass("hidden");
+  })
 
   //Handles hiding and showing of subQ1:
   $("#question1").change(function() {
