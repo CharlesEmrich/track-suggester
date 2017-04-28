@@ -12,46 +12,90 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Epicodus Track Suggester</h1>
+        <h3>We've prepared a questionnaire to help you decide which coding track is right for you. Take it, won't you?</h3>
       </div>
       <div class="row">
-
+        <form id="pref-form">
+          <div class="form-group">
+            <label for="question1">First Question</label>
+            <select multiple class="form-control" id="question1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="question2">Second Question</label>
+            <select multiple class="form-control" id="question2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="question3">Third Question</label>
+            <select multiple class="form-control" id="question3">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="question4">Fourth Question</label>
+            <select multiple class="form-control" id="question4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="question5">Fifth Question</label>
+            <select multiple class="form-control" id="question5">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </form>
       </div>
-      <div class="row tracks">
-        <div class="panel panel-info">
+      <div id="tracks" class="row hidden">
+        <div id="ruby-panel" class="panel panel-info">
             <div class="panel-heading">
-              TrackName Goes Here
+              Ruby/Rails
             </div>
             <div class="panel-body">
               Some Lorem Here
             </div>
         </div>
-        <div class="panel panel-info">
+        <div id="php-panel" class="panel panel-info">
             <div class="panel-heading">
-              TrackName Goes Here
+              PHP/Drupal
             </div>
             <div class="panel-body">
               Some Lorem Here
             </div>
         </div>
-        <div class="panel panel-info">
+        <div id="java-panel" class="panel panel-info">
             <div class="panel-heading">
-              TrackName Goes Here
+              Java/Android
             </div>
             <div class="panel-body">
               Some Lorem Here
             </div>
         </div>
-        <div class="panel panel-info">
+        <div id="css-panel" class="panel panel-info">
             <div class="panel-heading">
-              TrackName Goes Here
+              CSS/Design
             </div>
             <div class="panel-body">
               Some Lorem Here
             </div>
         </div>
-        <div class="panel panel-info">
+        <div id="c-panel" class="panel panel-info">
             <div class="panel-heading">
-              TrackName Goes Here
+              C#/.NET
             </div>
             <div class="panel-body">
               Some Lorem Here
